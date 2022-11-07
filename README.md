@@ -1,2 +1,2 @@
-# https-github.com-s4raev-LeetCode
+# s4raev-LeetCode
 Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
