@@ -1,15 +1,16 @@
 class Solution {
 public:
     int maxPower(string s) {
-        int res = 1;
-        int co = 1;
-        for(int i = 1; i < s.size(); i++) {
-            if (s[i] == s[i-1]) co++;
-            else {
-                res=max(res,co);
-                co = 1;
+       int cnt=0,ans=0;
+        for(int i=0;i<s.length();i++){
+            if(s[i]==s[i+1]){
+                cnt++;
             }
+            else{
+                cnt=0;
+            }
+            ans=max(cnt,ans);
         }
-        return max(res,co);
+       return ans+1;
     }
 };
